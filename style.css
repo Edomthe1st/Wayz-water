@@ -1,0 +1,420 @@
+ @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+ @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+body{
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+      background-image: url("images/water-drops-texture-background-blue-design.jpg");
+      background-size: cover;
+      background-position: center;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(251, 251, 252, 0.5); 
+    z-index: -1;
+  }
+a {
+    text-decoration: none!important;
+}
+.company-header{
+    font-family: 'Caprasimo', sans-serif;
+    font-weight: bolder;
+}
+.dark-blue{
+    color: rgb(4, 4, 103);
+}
+.hero{
+    width:  100%;
+    height: 70vh;
+    
+}
+.bg-image {
+    background-image: url('images/human-hand-holding-bottle-water.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    margin-top: 105px;
+  }
+  .bg-image-about {
+    background-image: url('images/splashing.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    margin-top: 108px;
+  }
+  .bg-image-contact{
+    background-image: url('images/handshake-businessmen.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    margin-top: 108px;
+    background-color: rgb(rgb(26, 225, 106), green, blue) ;
+    /* opacity: 0.85; */
+  }
+
+  .header-text{
+    font-size: 70px;
+    font-weight: bolder;
+    color: rgb(4, 4, 103);
+}
+.header-text-about{
+    font-size: 70px;
+    font-weight: bolder;
+    color: rgb(38, 38, 41);
+    margin-top: 70px;
+}
+.paragraph-text{
+  font-size: 30px;
+  color: rgb(4, 4, 103);
+}.paragraph-text-about{
+  font-size: 30px;
+  color: rgb(38, 38, 41);
+  margin-bottom: 80px;
+}
+.statistics{
+    justify-content: center;
+   background-color: rgb(145, 183, 207);
+   margin-top: 3%;
+  
+}
+
+
+.info{
+    margin-right: 2px;
+}
+.line{
+    border-left: 2px solid #000;
+    height: 100%;
+}
+.product-flex{
+    display: flex;
+}
+.product{
+    display: flex;
+}
+hr{
+    color: black;
+    height: 5px;
+}
+.hr{
+  color: rgb(203, 37, 37);
+  padding-top: 50px;
+}
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 2fr;
+    gap: 10px;
+    
+  }
+  .photo-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.8s ease;
+  }
+  .photo-grid img:hover {
+    transform: scale(1.1);
+  }
+  .photo-grid img:nth-child(1) {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+  }
+  .photo-grid img:nth-child(2) {
+    grid-column-end: span 1;
+    grid-row-end: span 2;
+  }
+  .photo-grid img:nth-child(3) {
+    grid-column-end: span 1;
+    grid-row-end: span 1;
+  }
+  .photo-grid img:nth-child(4) {
+    grid-column-end: span 2;
+    grid-row-end: span 1;
+  }
+  .photo-grid img:nth-child(5) {
+    grid-column-end: span 1;
+    grid-row-end: span 1;
+  }
+  .photo-grid img:nth-child(6) {
+    grid-column-end: span 1;
+    grid-row-end: span 1;
+  }
+  .photo-grid img:nth-child(7) {
+    grid-column-end: span 1;
+    grid-row-end: span 1;
+  }
+  .photo-grid img:nth-child(8) {
+    grid-column-end: span 2;
+    grid-row-end: span 1;
+  }
+  .position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .social {
+    padding: 15px;
+    margin: 5px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+  }
+  .social a{
+    font-size: 30px;
+    color: #F4FFFE;
+    border-style: groove;
+    border-color: grey;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px;
+    display: inline-block
+  }
+  .social a:hover {
+    background-color: darkblue;
+    color: white;
+    -webkit-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    -moz-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    -o-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  }
+  /* .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+   */
+   .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  .carousel .carousel-item>img {
+    max-width: 100%;
+    height: 100%;
+}
+.move{
+  margin-bottom: 30px;
+}
+.about-height{
+  height: 50vh;
+}
+.design-about{
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(8, 103, 245, 0.3);
+}
+.final-about-image{
+  background-image: url(images/glass-water-macro-shot.jpg);
+  background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* .contact-form{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 105px;
+} */
+form{
+  background: white;
+  width: 40vw;
+  padding: 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(15, 15, 15, 0.3);
+}
+form input,textarea{
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+}
+#input-field{
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+.send-btn{
+  width: 100px;
+  border: none;
+  background: #000;
+  color: white;
+  font-size: 16px;
+  padding: 6px 0;
+  border-radius: 50px;
+}
+/* .contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 105px;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.contact-item i {
+  margin-right: 10px;
+}
+
+.contact-item span {
+  font-size: 16px;
+} */
+
+
+/* @media only screen and (max-width: 767px) {
+.bg-image{
+    margin-top: 70px;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-image-about{
+  margin-top: 70px;
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.final-about-image{
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header-text{
+    font-size: 30px;
+}
+.paragraph-text{
+    font-size: 15px;
+   font-weight: bold;
+}
+.line{
+   display: none;
+}
+.product{display: flex;
+flex-direction: column;
+}
+.carousel-container {
+  display: flex;
+  height: 60vh;
+}
+
+} */
+@media only screen and (max-width: 769px) {
+  .carousel-container {
+    display: flex;
+    height: 40vh;
+    margin-top: 70px;
+  }
+  .bg-image{
+    height: 60vh;
+  }
+  .header-text{
+    font-size: large;
+  }
+  .paragraph-text{
+    font-size: small;
+  }
+  .social a{
+    font-size: 30px;
+    color: #F4FFFE;
+    border-style: none;
+    border-color: grey;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px;
+    display: contents;
+  }
+  .header-text-about{
+    font-size: xx-large;
+    font-weight:bolder;
+  }
+  .paragraph-text-about{
+    font-size: medium;
+  }
+  .font-weight-bolder{
+    font-size: large;
+    margin-bottom: 1px;
+  }
+  .take-up{
+    font-size: medium;
+    margin-bottom: 1px;
+  }
+  .take-ups{
+    font-size: x-small;
+  }
+  .about-height{
+    height: 80vh;
+  }
+.design-about{
+  width: 90%;
+}
+.bg-image-contact{
+  margin-top: 70px;
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.para-reduce{
+  font-size: small;
+}
+#input-field{
+  padding-bottom: 10px;
+}
+.index-reduce{
+  font-size: small;
+}
+}
+
+@media only screen and (max-width: 426px){
+  form{
+    width: 90vw;
+  }
+  .xsmall{
+    font-size: larger;
+  }
+}
