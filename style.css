@@ -20,6 +20,7 @@ body::before {
     background-color: rgba(251, 251, 252, 0.5); 
     z-index: -1;
   }
+ 
 a {
     text-decoration: none!important;
 }
@@ -40,6 +41,18 @@ a {
     background-size: cover;
     background-position: center;
     height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    margin-top: 105px;
+  }
+  .bg-image-brands {
+    background-image: url('images/brands-bgc.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -217,10 +230,10 @@ hr{
     height: 100vh;
     width: 100vw;
   }
-  .carousel .carousel-item>img {
+  /* .carousel .carousel-item>img {
     max-width: 100%;
     height: 100%;
-}
+} */
 .move{
   margin-bottom: 30px;
 }
@@ -241,14 +254,6 @@ hr{
     justify-content: center;
     text-align: center;
 }
-/* .contact-form{
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 105px;
-} */
 form{
   background: white;
   width: 40vw;
@@ -279,31 +284,17 @@ form input,textarea{
   padding: 6px 0;
   border-radius: 50px;
 }
-/* .contact-container {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 105px;
-}
-
-.contact-info {
-  margin-top: 30px;
-}
-
-.contact-item {
+.brand{
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  margin-bottom: 20px;
+  align-items: center;
+  text-align: center;
 }
-
-.contact-item i {
-  margin-right: 10px;
+.card{
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(15, 15, 15, 0.3);
 }
-
-.contact-item span {
-  font-size: 16px;
-} */
 
 
 /* @media only screen and (max-width: 767px) {
@@ -344,11 +335,58 @@ flex-direction: column;
 
 } */
 @media only screen and (max-width: 769px) {
-  .carousel-container {
-    display: flex;
-    height: 40vh;
+  .bg-image{
     margin-top: 70px;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-image-about{
+  margin-top: 70px;
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-image-brands{
+  margin-top: 70px;
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.final-about-image{
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header-text{
+    font-size: 30px;
+}
+.paragraph-text{
+    font-size: 15px;
+   font-weight: bold;
+}
+  /* .carousel-container {
+    display: flex;
+    height: auto;
+    margin-top: 70px;
+  } */
+  /* .carousel-inner{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
   }
+  .carousel-img{
+    width: 80%;
+    height: 40%;
+  } */
+  /* .carousel-img{
+    width: 80%;
+    height: 40%;
+    align-self: center;
+  } */
+ 
+  
   .bg-image{
     height: 60vh;
   }
@@ -398,6 +436,12 @@ flex-direction: column;
   background-size: cover;
   background-repeat: no-repeat;
 }
+.bg-image-brands{
+  margin-top: 70px;
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .para-reduce{
   font-size: small;
@@ -408,8 +452,17 @@ flex-direction: column;
 .index-reduce{
   font-size: small;
 }
+.brand{
+  flex-direction: column;
+  
 }
-
+.m-mobi{
+  margin: 50px 0;
+}
+.incr-font{
+  font-size: 40px;
+}
+}
 @media only screen and (max-width: 426px){
   form{
     width: 90vw;
